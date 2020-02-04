@@ -30,5 +30,4 @@ jobs:
         echo test, and deploy your project.
 
     - name: Only on tag
-      if: github.event_name == 'tag'
-      run: echo Someone did a tag!
+      run: echo $GITHUB_EVENT_NAME
